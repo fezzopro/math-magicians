@@ -58,6 +58,7 @@
 ### Key Features
 
 - **[Initialized project setup with React.]**
+- [ ] **[Calculator UI Components.]**
 
 
 <!-- LIVE DEMO -->
@@ -154,12 +155,9 @@ For Run tests
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Components.]**
 - [ ] **[Events.]**
 - [ ] **[Refactor with hooks.]**
-- [ ] **[Full website.]**
 - [ ] **[Unit Testing.]**
-- [ ] **[Application Deployment.]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
