@@ -4,8 +4,8 @@ import calculate from '../logic/calculate';
 const Calculator = () => {
   const [state, setState] = useState({ next: null, operation: null, total: null });
   const Button = (props) => {
-    const signs = props.signs; //eslint-disable-line
-    return signs.map((sign) => {  //eslint-disable-line
+    const signs = props.signs;
+    return signs.map((sign) => {
       const callCalculate = (value) => {
         const results = calculate(state, value);
         setState((prevState) => ({ ...prevState, ...results }));
