@@ -25,7 +25,7 @@ const Calculator = () => {
   };
   const displayValue = `${state.total ?? ''} ${state.operation ?? ''} ${state.next ?? ''}`;
 
-  const signs = ['AC', '+/-', '%', '+', '7', '8', '9', '*', '4', '5', '6', '-', '1', '2', '3', '+', '0', '.', '='];
+  const signs = ['AC', '+/-', '%', '÷', '7', '8', '9', 'x', '4', '5', '6', '-', '1', '2', '3', '+', '0', '.', '='];
   return (
     <div className="calculator">
       <input className="display-value" type="text" value={displayValue} readOnly />
