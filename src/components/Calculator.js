@@ -3,9 +3,8 @@ import calculate from '../logic/calculate';
 
 const Calculator = () => {
   const [state, setState] = useState({ next: null, operation: null, total: null });
-  const Button = (props) => {
-    const signs = props.signs;
-    return signs.map((sign) => {
+  const Button = ({ signs }) => {
+    const btns = signs.map((sign) => {
       const callCalculate = (value) => {
         const results = calculate(state, value);
         setState((prevState) => ({ ...prevState, ...results }));
@@ -22,6 +21,7 @@ const Calculator = () => {
         </button>
       );
     });
+    return btns;
   };
   const displayValue = `${state.total ?? ''} ${state.operation ?? ''} ${state.next ?? ''}`;
 
