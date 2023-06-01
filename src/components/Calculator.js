@@ -1,7 +1,30 @@
-const Button = (props) => props.signs.map((sign) => <button type="button" className={`button button-${sign.toString()}`} key={sign.toString()}>{sign}</button>);
+import { useState } from 'react';
+import calculate from '../logic/calculate';
 
 const Calculator = () => {
-  const displayValue = 0;
+  const [state, setState] = useState({ next: null, operation: null, total: null });
+  const Button = (props) => {
+    const signs = props.signs; //eslint-disable-line
+    return signs.map((sign) => {  //eslint-disable-line
+      const callCalculate = (value) => {
+        const results = calculate(state, value);
+        setState((prevState) => ({ ...prevState, ...results }));
+      };
+      return (
+        <button
+          onClick={(event) => callCalculate(event.target.value)}
+          type="button"
+          className={`button button-${sign.toString()}`}
+          key={sign.toString()}
+          value={sign.toString()}
+        >
+          {sign}
+        </button>
+      );
+    });
+  };
+  const displayValue = `${state.total ?? ''} ${state.operation ?? ''} ${state.next ?? ''}`;
+
   const signs = ['AC', '+/-', '%', '+', '7', '8', '9', '*', '4', '5', '6', '-', '1', '2', '3', '+', '0', '.', '='];
   return (
     <div className="calculator">
