@@ -13,14 +13,18 @@ const getQuote = (setQuote, setIsLoading) => {
       setQuote({ ...oneQuote[0] });
     })
     .catch(() => {
-      setQuote({ quote: 'API Server Failed', author: null, category: null });
+      setQuote({
+        quote: null, author: null, category: null, error: 'API Server Failed',
+      });
     })
     .finally(() => {
       setIsLoading(false);
     });
 };
 const Quote = () => {
-  const [quote, setQuote] = useState({ quote: null, author: null, category: null });
+  const [quote, setQuote] = useState({
+    quote: null, author: null, category: null, error: null,
+  });
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -38,6 +42,7 @@ const Quote = () => {
 
   return (
     <div className="quotes">
+      <div>{quote.error}</div>
       <div>{quote.quote}</div>
       <div>
         Category:
