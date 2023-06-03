@@ -13,7 +13,7 @@
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 [tv-movies] <a name="about-project"></a>](#-tv-movies-)
+- [📖 Math Magicians <a name="about-project"></a>](#-math-magicians-)
   - [🛠 Built With <a name="HTML and CSS"></a>](#-built-with-)
     - [Tech Stack <a name="Front end"></a>](#tech-stack-)
     - [Key Features](#key-features)
@@ -32,7 +32,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [tv-movies] <a name="about-project"></a>
+# 📖 [math-magicians] <a name="about-project"></a>
 
 **[Math magicians]** is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to:
 
