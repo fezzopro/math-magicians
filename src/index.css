@@ -76,3 +76,21 @@ body {
   display: flex;
   gap: 2rem;
 }
+
+.loading {
+  display: flex;
+  justify-content: center;
+  background-image: url('/src/img/svg/loading.svg');
+  background-repeat: no-repeat;
+  min-width: 16rem;
+  flex-direction: column;
+  align-items: flex-end;
+  background-position-x: center;
+  background-position-y: center;
+  animation: rotate 2s infinite;
+}
+
+@keyframes rotate {
+  /* 50% { transform: rotate(180deg); } */
+  100% { transform: rotate(360deg); }
+}
