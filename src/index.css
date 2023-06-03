@@ -1,7 +1,6 @@
 body {
   display: flex;
-  justify-content: center;
-  margin: 0;
+  margin: 4rem 10rem;
   font-family:
     -apple-system,
     BlinkMacSystemFont,
@@ -64,4 +63,16 @@ body {
 
 .button-0 {
   flex-grow: 2;
+}
+
+.quotes {
+  max-width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+#root {
+  display: flex;
+  gap: 2rem;
 }
