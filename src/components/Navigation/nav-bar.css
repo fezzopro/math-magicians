@@ -1,0 +1,22 @@
+.nav-bar {
+  display: flex;
+  padding: 0.5rem 1rem;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  line-height: 2rem;
+  font-weight: 600;
+}

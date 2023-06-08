@@ -1,0 +1,19 @@
+.quote {
+  background: #3333;
+  padding: 5%;
+  margin: 1%;
+}
+
+.quotes {
+  max-width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: end;
+}
+
+.quote-section {
+  display: flex;
+  flex-direction: row !important;
+  justify-content: center;
+}
