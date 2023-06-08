@@ -1,6 +1,5 @@
 body {
   display: flex;
-  margin: 4rem 10rem;
   font-family:
     -apple-system,
     BlinkMacSystemFont,
@@ -15,79 +14,25 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-.calculator {
-  display: flex;
-  flex-direction: column;
-}
-
-.display-value {
-  display: flex;
-  height: 50px;
-  border: 1px solid #858694;
-  justify-content: flex-end;
-  align-items: center;
-  font-size: 1.5em;
-  background: #858694;
-  color: #ffff;
-  padding: 0 10px;
-  text-align: end;
-}
-
-.button {
-  display: flex;
-  flex: 0 1 25%;
-  justify-content: center;
-  align-items: center;
-  height: 50px;
-  border: 1px solid #858694;
-  border-top: none;
-  border-left: none;
-  cursor: pointer;
-  background: -webkit-linear-gradient(top, #d2d2d2, #ddd);
-  font-size: 2em;
-}
-
-.button:nth-child(4n),
-.button:last-child {
-  background: #f5913e;
-}
-
-.buttons,
-.result {
-  display: flex;
-  flex-wrap: wrap;
-  flex: 0 1 100%;
-}
-
-.button-0 {
-  flex-grow: 2;
-}
-
-.quotes {
-  max-width: 40%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  background-image: url('./img/background/background.png');
+  background-size: cover;
 }
 
 #root {
   display: flex;
   gap: 2rem;
+  width: 100%;
 }
 
-.loading {
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.main-content {
   display: flex;
   justify-content: center;
-  background-image: url('/src/img/svg/loading.svg');
-  background-repeat: no-repeat;
-  min-width: 16rem;
-  flex-direction: column;
-  align-items: flex-end;
-  background-position-x: center;
-  background-position-y: center;
-  animation: rotate 2s infinite;
 }
 
 @keyframes rotate {
