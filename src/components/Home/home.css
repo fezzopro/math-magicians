@@ -1,0 +1,7 @@
+.into,
+.quote-section {
+  flex-direction: column;
+  background: #3333;
+  padding: 5%;
+  margin: 1%;
+}
